@@ -1,0 +1,322 @@
+.page {
+    background-color: #C7CCDB;
+    box-shadow: 0 10px 100px  rgba(2, 133, 119, 0.05);
+  }
+  
+  main {
+    background-color: #E1E5EE;
+  }
+  
+  a,
+  a:hover,
+  a:visited {
+    color: black;
+  }
+  
+  .divider.fat {
+    border-top: 0.3571428571428571em solid #2A324B;
+    width: 100%;
+  }
+  
+  body {
+    background: #767B91;
+  }
+  
+  .clover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .rrr:hover{
+      cursor: pointer;
+  }
+  .corgi {
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: relative;
+    width: 200px;
+    height: 300px;
+  }
+  
+  .head {
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    left: 100px;
+  }
+  
+  .head::after {
+    /* cheeks */
+    position: absolute;
+    top: 80px;
+    left: -100px;
+    content: '';
+    border: 100px solid transparent;
+    border-top: 80px solid #ee9837;
+  }
+  
+  .head .forehead {
+    position: absolute;
+    top: 20px;
+    left: -60px;
+    height: 100px;
+    width: 120px;
+    background: #ee9837;
+    border-radius: 40%;
+  }
+  
+  .snout {
+    /* an upside down css heart <3 */
+    position: relative;
+    z-index: 2;
+    top: 60px;
+    left: -40px;
+  }
+  
+  .snout::before,
+  .snout::after {
+    background: #fff;
+    position: absolute;
+    content: "";
+    top: 10px;
+    width: 50px;
+    height: 80px;
+    border-top: 1px solid #ddd;
+    border-radius: 60px 60px 0 0;
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    transform: rotate(225deg);
+  }
+  
+  .snout::after {
+    left: 30px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  
+  .bridge {
+    /* white fur between eyes */
+    position: absolute;
+    top: -40px;
+    left: 30px;
+    border: 10px solid transparent;
+    border-bottom: 40px solid #ee9837;
+    border-bottom-color: #fff;
+  }
+  
+  .booper {
+    /* nose */
+    background: black;
+    position: absolute;
+    z-index: 1;
+    top: 35px;
+    left: 20px;
+    height: 30px;
+    width: 40px;
+    border-radius: 50px 50px 70px 70px;
+  }
+  
+  .eyes {
+    position: absolute;
+    top: 60px;
+  }
+  
+  .eyes .left {
+    position: absolute;
+    background: black;
+    margin: auto;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    left: 25px;
+  }
+  
+  .eyes .right {
+    position: absolute;
+    background: black;
+    margin: auto;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    right: 25px;
+  }
+  
+  .ears .left {
+    background-color: #ee9837;
+    position: absolute;
+    left: -40px;
+    top: 35px;
+    transform: rotate(45deg) skewX(40deg) scale(1, 0.866);
+  }
+  
+  .ears .right {
+    background-color: #ee9837;
+    position: absolute;
+    right: -40px;
+    top: 35px;
+    transform: rotate(-45deg) skewX(-40deg) scale(1, 0.866);
+  }
+  
+  .ears .right,
+  .ears .right::before,
+  .ears .right::after,
+  .ears .left,
+  .ears .left::before,
+  .ears .left::after {
+    width: 7em;
+    height: 6em;
+  }
+  
+  .ears .right,
+  .ears .right::before,
+  .ears .right::after {
+    border-radius: 20% 20% 40% 20%;
+  }
+  
+  .ears .left,
+  .ears .left::before,
+  .ears .left::after {
+    border-radius: 20% 20% 20% 40%;
+  }
+  
+  .tongue {
+    background: #e8b4bc;
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    left: 15px;
+    width: 30px;
+    height: 40px;
+    border-radius: 0 0 40% 40%;
+    -webkit-animation: happydoggo 0.5s infinite;
+    animation: happydoggo 0.5s infinite;
+  }
+  
+  @keyframes happydoggo {
+    0% {
+      top: 30px;
+    }
+  
+    50% {
+      top: 25px;
+    }
+  
+    100% {
+      top: 30px;
+    }
+  }
+  
+  @-webkit-keyframes happydoggo {
+    0% {
+      top: 30px;
+    }
+  
+    50% {
+      top: 25px;
+    }
+  
+    100% {
+      top: 30px;
+    }
+  }
+  
+  .mouth {
+    background: #fff;
+    position: relative;
+    width: 62px;
+    height: 62px;
+    top: 100px;
+    bottom: 0;
+    left: -31px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+  }
+  
+  .magnificent-floof {
+    /* see mixin at top */
+    position: absolute;
+    top: 146px;
+    right: 0;
+    bottom: 0;
+    left: 0 px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 160px solid #fff;
+    border-radius: 0 0 0 50px;
+  }
+  
+  .magnificent-floof .left {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 80px solid transparent;
+    border-right: 80px solid #fff;
+    top: -140px;
+    left: -100px;
+  }
+  
+  .magnificent-floof .left::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 80px solid transparent;
+    border-right: 80px solid #fff;
+    top: 15px;
+    left: -10px;
+  }
+  
+  .magnificent-floof .left::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 80px solid transparent;
+    border-right: 80px solid #fff;
+    top: 38px;
+    left: -2px;
+  }
+  
+  .magnificent-floof .right {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 80px solid transparent;
+    border-left: 80px solid #fff;
+    top: -140px;
+    right: -100px;
+  }
+  
+  .magnificent-floof .right::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 80px solid transparent;
+    border-left: 80px solid #fff;
+    top: 15px;
+    right: -10px;
+  }
+  
+  .magnificent-floof .right::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 80px solid transparent;
+    border-left: 80px solid #fff;
+    top: 38px;
+    right: -2px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .clover { display: none; }
+  }
+  
